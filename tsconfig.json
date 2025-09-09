@@ -1,0 +1,88 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
+    "downlevelIteration": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "useDefineForClassFields": true,
+    "allowImportingTsExtensions": false,
+    "isolatedModules": true,
+    "noEmit": false,
+    "rootDir": "./src",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "resolveJsonModule": true,
+    "declarationDir": "dist/types",
+    "preserveConstEnums": true,
+    "checkJs": false,
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@appClient/*": [
+        "./src/appClient/*"
+      ],
+      "@appProvider/*": [
+        "./src/appProvider/*"
+      ],
+      "@appRouter/*": [
+        "./src/appRouter/*"
+      ],
+      "@appRoutes/*": [
+        "./src/appRoutes/*"
+      ],
+      "@appLocation/*": [
+        "./src/appLocation/*"
+      ],
+      "@appServer/*": [
+        "./src/appServer/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@pageData/*": [
+        "./src/pageData/*"
+      ],
+      "@globalData/*": [
+        "./src/globalData/*"
+      ],
+      "@locales/*": [
+        "./src/locales/*"
+      ],
+      "@userAgent/*": [
+        "./src/userAgent/*"
+      ]
+    }
+  },
+  "include": ["src"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
